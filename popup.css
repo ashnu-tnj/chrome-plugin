@@ -1,0 +1,85 @@
+body {
+  width: 320px;
+  margin: 0;
+  padding: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: #0f0f0f;
+  background: #fff;
+  box-sizing: border-box;
+}
+* { box-sizing: inherit; }
+
+h1 {
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin: 10px 0 4px;
+}
+.hint {
+  font-weight: 400;
+  color: #606060;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+}
+input:focus {
+  outline: none;
+  border-color: #065fd4;
+}
+
+.dates {
+  display: flex;
+  gap: 10px;
+}
+.dates > div { flex: 1; }
+
+.error {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #fde8e8;
+  color: #c00;
+}
+
+button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 9px;
+  border: none;
+  border-radius: 18px;
+  background: #c00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover { background: #a00; }
+
+.footnote {
+  margin: 12px 0 0;
+  color: #606060;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #212121; color: #f1f1f1; }
+  .hint, .footnote { color: #aaa; }
+  input[type="text"], input[type="date"] {
+    background: #121212;
+    color: #f1f1f1;
+    border-color: #3f3f3f;
+  }
+  .error { background: #3a1414; color: #ff8a80; }
+}

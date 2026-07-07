@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>YouTube Date Range Search</h1>
+
+  <label for="keywords">Keywords <span class="hint">(optional)</span></label>
+  <input type="text" id="keywords" placeholder="e.g. rocket landing">
+
+  <label for="channel">Channel <span class="hint">(URL, @handle, or name — optional)</span></label>
+  <input type="text" id="channel" placeholder="e.g. @veritasium or channel URL">
+
+  <div class="dates">
+    <div>
+      <label for="from">From</label>
+      <input type="date" id="from">
+    </div>
+    <div>
+      <label for="to">To</label>
+      <input type="date" id="to">
+    </div>
+  </div>
+
+  <div id="error" class="error" hidden></div>
+
+  <button id="search">Search on YouTube</button>
+
+  <p class="footnote">If a channel URL or @handle is given, the search runs inside that channel. A plain channel name is added to a site-wide search.</p>
+
+  <script src="search-builder.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

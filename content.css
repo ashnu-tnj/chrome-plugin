@@ -1,0 +1,83 @@
+#ytdrs-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 18px;
+  background: #c00;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+#ytdrs-toggle:hover { background: #a00; }
+
+#ytdrs-panel {
+  position: fixed;
+  bottom: 64px;
+  right: 20px;
+  z-index: 9999;
+  width: 280px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #212121;
+  color: #f1f1f1;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+#ytdrs-panel * { box-sizing: border-box; }
+
+#ytdrs-panel .ytdrs-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#ytdrs-panel input[type="text"],
+#ytdrs-panel input[type="date"] {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  border: 1px solid #3f3f3f;
+  border-radius: 6px;
+  background: #121212;
+  color: #f1f1f1;
+  font-size: 12px;
+}
+
+#ytdrs-panel .ytdrs-dates {
+  display: flex;
+  gap: 8px;
+}
+#ytdrs-panel .ytdrs-dates label {
+  flex: 1;
+  font-size: 11px;
+  color: #aaa;
+}
+
+#ytdrs-panel .ytdrs-error {
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background: #3a1414;
+  color: #ff8a80;
+}
+
+#ytdrs-panel button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 16px;
+  background: #c00;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#ytdrs-panel button:hover { background: #a00; }
