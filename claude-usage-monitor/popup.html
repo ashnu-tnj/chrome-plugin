@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Claude Usage Monitor</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="popup">
+    <header class="header">
+      <h1>Claude usage</h1>
+      <button id="refresh-btn" title="Refresh now">&#x21bb;</button>
+    </header>
+
+    <div id="error" class="error" hidden></div>
+    <div id="limits" class="limits"></div>
+
+    <footer class="footer">
+      <span id="updated"></span>
+      <a href="https://claude.ai/settings/usage" target="_blank" rel="noopener">Open usage page</a>
+    </footer>
+  </main>
+  <script src="usage-model.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
