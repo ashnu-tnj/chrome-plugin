@@ -6,7 +6,6 @@ This repository hosts multiple Chrome extensions, each in its own folder:
 |--------|-----------|
 | [`youtube-date-range-search/`](youtube-date-range-search/) | Search YouTube videos published within a specific date range |
 | [`claude-usage-monitor/`](claude-usage-monitor/) | Live view of remaining Claude usage limits (session, weekly, per-model) in the toolbar |
-| [`starter-extension/`](starter-extension/) | Minimal Manifest V3 scaffold for building a new extension |
 
 ## Loading an extension
 
