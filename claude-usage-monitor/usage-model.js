@@ -9,10 +9,24 @@ const KNOWN_LIMIT_LABELS = {
   seven_day_haiku: "Weekly — Haiku",
   seven_day_fable: "Weekly — Fable",
   seven_day_oauth_apps: "Weekly — Claude Code",
+  fable_credit_limit: "Fable 5 credit limit",
+  fable_five_credit_limit: "Fable 5 credit limit",
+  fable_5_credit_limit: "Fable 5 credit limit",
 };
 
 // Known keys render first, in this order; unknown keys follow alphabetically.
-const KNOWN_LIMIT_ORDER = Object.keys(KNOWN_LIMIT_LABELS);
+const KNOWN_LIMIT_ORDER = [
+  "five_hour",
+  "seven_day",
+  "seven_day_opus",
+  "seven_day_sonnet",
+  "seven_day_haiku",
+  "seven_day_fable",
+  "seven_day_oauth_apps",
+  "fable_credit_limit",
+  "fable_five_credit_limit",
+  "fable_5_credit_limit",
+];
 
 function prettifyLimitKey(key) {
   return key
